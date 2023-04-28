@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blueberry</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="assets/img/blub.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Blueberry">
+  <meta name="keywords" content="sieu cap bulul gaming ">
+  <meta name="author" content="Blueberry94">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="js-preloader" class="js-preloader">
+  <div align="center">
+    <center><img src="assets/img/avtloading.png"></center>
+    <span style="font-size: 17px; color: black;">CONNECTING TO HOST. . .
+    <br>LOADING DATA. . .</span>
+  </div>
+</div>
+
+<script>
+  setTimeout(function () {
+      $('.js-preloader').fadeToggle ();
+  },1500);
+</script>
+
+<!-- Notification for small viewports and landscape oriented device -->
+<div class="device-notification">
+  <a class="device-notification--logo">
+    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-alert-triangle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+      <path d="M10.24 3.957l-8.422 14.06a1.989 1.989 0 0 0 1.7 2.983h16.845a1.989 1.989 0 0 0 1.7 -2.983l-8.423 -14.06a1.989 1.989 0 0 0 -3.4 0z"></path>
+      <path d="M12 9v4"></path>
+      <path d="M12 17h.01"></path>
+    </svg>
+    <p>Blueberry</p>
+  </a>
+  <p class="device-notification--message">
+    For some inconvenient reasons due to website incompatibility with
+    your screen so you cannot access the full feature
+    on site. Please use a higher resolution device for
+    better experience!
+  </p>
+</div>
+
+<!-- BG -->
+<video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+  <source src="assets/img/theme.mp4" type="video/mp4">
+      Your web browser does not support background video
+</video>
+
+<!-- Head -->
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+        <header class="header">    
+          <a class="header--logo" href="#0">
+            <p>&nbsp;</p>
+          </a>
+          <div class="header--nav-toggle">
+            <span></span>
+          </div>
+        </header>
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span><img src="assets/img/homemini.png"></span></li>
+            <li><span><img src="assets/img/workspacemini.png"></span></li>
+            <li><span><img src="assets/img/contactmini.png"></span></li>
+          </ul>
+        </nav>
+        <!-- Home Page -->
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <center><img src="assets/img/avt.png"></center>
+              <center><h1><img src="assets/img/blueberry.png"></h1></center>
+              <div class="intro--options">
+                <a>
+                  <h3>&nbsp;</h3>
+                  <p>&nbsp;</p>
+                </a>
+                <a>
+                  <h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye-check" width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                      <path d="M11.143 17.961c-3.221 -.295 -5.936 -2.281 -8.143 -5.961c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.222 .37 -.449 .722 -.68 1.057"></path>
+                      <path d="M15 19l2 2l4 -4"></path>
+                    </svg>
+                  </h3>
+                  <h3 id="visits">
+                    Can't display because
+                    <br>CountAPI Is Having Some Problem
+                  </h3>
+                </a>
+                <a>
+                  <h3>&nbsp;</h3>
+                  <p>&nbsp;</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <!-- Workspace -->
+          <li class="l-section section">
+            <div class="work">
+              <h2>WORKSPACE</h2>
+              <div class="work--lockup">
+                <ul class="slider">
+                  <li class="slider--item slider--item-left">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/nodata.jpg" alt="nodata">
+                      </div>
+                      <p class="slider--item-title">No Data</p>
+                      <p class="slider--item-description">
+                        <div>
+                          <h1>No Data</h1>
+                          <div>No Data</div>
+                        </div>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-center">
+                    <a>
+                      <div class="slider--item-image">
+                        <img src="assets/img/fallens.jpg" alt="FallensNetwork">
+                      </div>
+                      <p class="slider--item-title"><img src="assets/img/FALLENS-NETWORK.png" alt="FallensNetwork"></p>
+                      <p class="slider--item-description">
+                        <div>
+                          <h1 id="server-ip">Loading..</h1>
+                          <div><span id="player-count">00</span> Players Online</div>
+                        </div>
+                      </p>
+                    </a>
+                  </li>
+                  <li class="slider--item slider--item-right">
+                    <a href="#0">
+                      <div class="slider--item-image">
+                        <img src="assets/img/nodata.jpg" alt="nodata">
+                      </div>
+                      <p class="slider--item-title">No Data</p>
+                      <p class="slider--item-description">
+                        <div>
+                          <h1>No Data</h1>
+                          <div>No Data</div>
+                        </div>
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+                <div class="slider--prev">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="slider--next">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
+                  </g>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Contact -->
+          <li class="l-section section">
+            <div class="hire">
+              <h2>CONTACT</h2>
+                <div class="work-request--options">
+                  <div class="options-a">
+                    <a for="opt-1" href="https://discord.com/users/905671220333264966" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-discord-filled" width="100" height="100" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M14.983 3l.123 .006c2.014 .214 3.527 .672 4.966 1.673a1 1 0 0 1 .371 .488c1.876 5.315 2.373 9.987 1.451 12.28c-1.003 2.005 -2.606 3.553 -4.394 3.553c-.94 0 -2.257 -1.596 -2.777 -2.969l-.02 .005c.838 -.131 1.69 -.323 2.572 -.574a1 1 0 1 0 -.55 -1.924c-3.32 .95 -6.13 .95 -9.45 0a1 1 0 0 0 -.55 1.924c.725 .207 1.431 .373 2.126 .499l.444 .074c-.477 1.37 -1.695 2.965 -2.627 2.965c-1.743 0 -3.276 -1.555 -4.267 -3.644c-.841 -2.206 -.369 -6.868 1.414 -12.174a1 1 0 0 1 .358 -.49c1.392 -1.016 2.807 -1.475 4.717 -1.685a1 1 0 0 1 .938 .435l.063 .107l.652 1.288l.16 -.019c.877 -.09 1.718 -.09 2.595 0l.158 .019l.65 -1.287a1 1 0 0 1 .754 -.54l.123 -.01zm-5.983 6a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15zm6 0a2 2 0 0 0 -1.977 1.697l-.018 .154l-.005 .149l.005 .15a2 2 0 1 0 1.995 -2.15z" stroke-width="0" fill="currentColor"></path>
+                     </svg>
+                     <center><p>Discord</p></center>
+                    </a>
+                    <a for="opt-2" href="https://facebook.com/trm.nguyen94" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="100" height="100" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                     </svg>
+                     <center><p>Facebook</p></center>
+                    </a>
+                    <a for="opt-3" href="https://github.com/blu3berry94" target="_blank">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="100" height="100" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
+                     </svg>
+                     <center><p>GitHub</p></center>
+                    </a>
+                  </div>
+                </div>
+                <p>&copy; <script>document.write(new Date().getFullYear())</script>, Made by <a style="font-size: 15px;" href="http://fb.com/trm.nguyen94"> Blueberry</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+  <ul class="outer-nav">
+    <li class="is-active"><img src="assets/img/homebig.png"></li>
+    <li><img src="assets/img/workspacebig.png"></li>
+    <li><img src="assets/img/contactbig.png"></li>
+  </ul>
+</div>
+
+<!-- Additional Scripts -->
+<script async src="https://api.countapi.xyz/hit/blueberry.is-a.dev/ddafc0b3-219b-4132-ac19-654f4148f242?callback=websiteVisits"></script>
+<script src="assets/js/view.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="assets/js/functions-min.js"></script>
+<!-- Fallens Network -->
+<script>
+  function initServerData(serverIp,serverPort){
+      const serverIpElement = document.getElementById('server-ip');
+      serverIpElement.innerHTML = serverIp;
+      fetch('https://mcapi.us/server/status?ip='+serverIp+'&port='+serverPort)
+      .then(response => response.json())
+      .then(data => handleServerStatus(data));
+
+      function handleServerStatus(data){
+          if(data.status=='error'){
+              console.log(data.error);
+              return false;
+          }
+          const motd = document.getElementById("motd");
+          motd.innerHTML = data.motd;
+
+          const playerCounter = document.getElementById("player-count");
+          playerCounter.innerHTML = data.players.now;
+
+          const logo = document.getElementById("server-icon");
+          logo.src = data.favicon;
+      } 
+  }
+
+  initServerData("fallens.pw","25565");
+</script>
+</body>
+</html>
